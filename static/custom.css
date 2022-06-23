@@ -46,6 +46,23 @@ a {
   width: 170px;
 }
 
+.sous a {
+  color: #fff;
+}
+
+.sous {
+  position: absolute;
+  background: var(--second-blue-color);
+  overflow: hidden;
+  visibility: hidden;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.nav > ul li:hover .sous {
+  visibility: visible;
+}
+
 /* Services */
 
 .img-service {
@@ -141,14 +158,6 @@ textarea {
   padding: 125px 0;
 }
 
-@media only screen and (max-width: 1025px) {
-  .contact-details {
-    padding: 0;
-    width: 100%;
-    margin-inline: auto;
-  }
-}
-
 /* Footer */
 
 .footer {
@@ -163,23 +172,28 @@ textarea {
 /* Page service */
 
 main {
-  margin: 50px;
+  margin: 70px 100px;
 }
 
 .title-service {
   text-align: center;
-  padding: 20px 0;
+  margin-top: 20px;
 }
 
 .img-service-page {
   width: 500px;
   object-fit: cover;
+  box-shadow: 5px 5px 5px lightgray;
 }
 
 .img-block {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.description-img {
+  margin: 90px;
 }
 
 .options {
@@ -189,6 +203,10 @@ main {
   grid-column-gap: 30px;
   grid-row-gap: 0px;
   margin-bottom: 50px;
+}
+
+.contact-details {
+  padding-left: 30px;
 }
 
 .btn {
@@ -203,4 +221,30 @@ main {
 
 .btn-service:hover {
   color: var(--secondary-gold-color);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1200px) {
+  .img-block {
+    display: block;
+    text-align: center;
+  }
+  .description-img {
+    margin: 1px;
+
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .contact-details {
+    padding: 0;
+    text-align: center;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
 }
