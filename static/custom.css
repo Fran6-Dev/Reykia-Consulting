@@ -157,5 +157,50 @@ textarea {
 
 .copyrights {
   float: inherit;
-  margin: 2.625rem 22rem 2rem;
+  /* margin: 2.625rem 22rem 2rem; */
+}
+
+/* Page service */
+
+main {
+  margin: 50px;
+}
+
+.title-service {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.img-service-page {
+  width: 500px;
+  object-fit: cover;
+}
+
+.img-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-service {
+  background-color: var(--second-blue-color);
+  color: #fff;
+}
+
+.btn-service:hover {
+  color: var(--secondary-gold-color);
 }
