@@ -30,7 +30,11 @@
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="static/img/Reykia-logo/icon-site.png"
+    />
   </head>
   <body>
     <nav class="navigation-top _fixed" js-navigation-top>
@@ -56,12 +60,12 @@
 
         <div class="nav navigation-top__right-area hamburger-content">
           <ul class="navigation-top__items">
-            <li class="navigation-top__item"><a href="index.html">Home</a></li>
+            <li class="navigation-top__item"><a href="#home">Home</a></li>
             <li class="navigation-top__item">
-              <a href="#advantages">What We Do</a>
+              <a href="#us">What We Do</a>
             </li>
             <li class="navigation-top__item">
-              <a href="">Services</a>
+              <a href="#services">Services</a>
               <ul class="sous">
                 <li><a href="services-1.html">Company Set Up</a></li>
                 <li><a href="services-2.html">Residency in UAE</a></li>
@@ -70,7 +74,7 @@
               </ul>
             </li>
             <li class="navigation-top__item">
-              <a href="#contact">Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li class="navigation-top__item"><a href="#contact">Contact</a></li>
           </ul>
@@ -87,7 +91,7 @@
         background-size: cover;
       "
     >
-      <div class="row">
+      <div id="home" class="row">
         <div class="large-6 columns main-message main-message-left">
           <h1 class="text-shadow white-text">Your Business</h1>
 
@@ -110,8 +114,8 @@
       <div class="large-4 columns text-center animate-show">
         <img class="about-image" src="static/img/Background-img/Annexe 2.jpg" />
       </div>
-      <div class="large-8 columns">
-        <h2 class="">Your Idea - Your Business</h2>
+      <div id="us" class="large-8 columns">
+        <h2 class="">What We Do</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -144,13 +148,15 @@
           </p>
         </div>
         <div class="medium-3 large-2 columns text-center">
-          <button class="_filled-white-grey" data-modal="1">Contact us</button>
+          <a href="#contact">
+            <button class="_filled-white-grey">Contact us</button>
+          </a>
         </div>
       </div>
     </div>
 
-    <div id="advantages" class="row text-center">
-      <h2 class="animate-show">Advantages</h2>
+    <div id="services" class="row text-center">
+      <h2 class="animate-show">Services</h2>
 
       <p class="secondary info-tip-medium font-regular animate-show">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -160,64 +166,71 @@
       <ul
         class="small-block-grid-1 medium-block-grid-4 large-block-grid-4 icons animate-from-up"
       >
-        <li>
-          <div class="icon-block">
-            <!-- <i class="fa fa-lock"></i> -->
-            <img
-              class="img-service"
-              src="./static/img/Background-img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg"
-              alt="compagny set up"
-            />
-          </div>
-          <h4 class="">Company Set Up</h4>
-          <p class="secondary info-tip font-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elite, sed do
-            eiusmod tempor.
-          </p>
-        </li>
-
-        <li>
-          <div class="icon-block">
-            <img
-              class="img-service"
-              src="./static/img/Background-img/Residency Visa.jpg"
-              alt="compagny set up"
-            />
-          </div>
-          <h4 class="">Residency in UAE</h4>
-          <p class="secondary info-tip font-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elite, sed do
-            eiusmod tempor.
-          </p>
-        </li>
-        <li>
-          <div class="icon-block">
-            <img
-              class="img-service"
-              src="./static/img/Background-img/Bank account opening.jpg"
-              alt="compagny set up"
-            />
-          </div>
-          <h4 class="">Bank account opening</h4>
-          <p class="secondary info-tip font-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-        </li>
-        <li>
-          <div class="icon-block">
-            <img
-              class="img-service"
-              src="./static/img/Background-img/Business advice 1.jpg"
-              alt="compagny set up"
-            />
-          </div>
-          <h4 class="">Business Advice</h4>
-          <p class="secondary info-tip font-regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-        </li>
+        <a href="services-1.html">
+          <li>
+            <div class="icon-block">
+              <!-- <i class="fa fa-lock"></i> -->
+              <img
+                class="img-service"
+                src="./static/img/Background-img/christina-wocintechchat-com-UTw3j_aoIKM-unsplash.jpg"
+                alt="compagny set up"
+              />
+            </div>
+            <h4 class="">Company Set Up</h4>
+            <p class="secondary info-tip font-regular">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elite, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+        </a>
+        <a href="services-2.html">
+          <li>
+            <div class="icon-block">
+              <img
+                class="img-service"
+                src="./static/img/Background-img/Residency Visa.jpg"
+                alt="compagny set up"
+              />
+            </div>
+            <h4 class="">Residency in UAE</h4>
+            <p class="secondary info-tip font-regular">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elite, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+        </a>
+        <a href="services-3.html">
+          <li>
+            <div class="icon-block">
+              <img
+                class="img-service"
+                src="./static/img/Background-img/Bank account opening.jpg"
+                alt="compagny set up"
+              />
+            </div>
+            <h4 class="">Bank account opening</h4>
+            <p class="secondary info-tip font-regular">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+        </a>
+        <a href="services-4.html">
+          <li>
+            <div class="icon-block">
+              <img
+                class="img-service"
+                src="./static/img/Background-img/Business advice 1.jpg"
+                alt="compagny set up"
+              />
+            </div>
+            <h4 class="">Business Advice</h4>
+            <p class="secondary info-tip font-regular">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+        </a>
       </ul>
     </div>
     <div
@@ -250,7 +263,7 @@
       </div>
     </div>
 
-    <div id="reviews" class="row animate-show">
+    <div id="testimonials" class="row animate-show">
       <div class="reviews">
         <h2 class="">What our clients say</h2>
 
