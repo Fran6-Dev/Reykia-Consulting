@@ -63,6 +63,14 @@ a {
   visibility: visible;
 }
 
+.head {
+  width: 100%;
+}
+
+.welcome-screen .main-message p {
+  max-width: 100%;
+}
+
 /* Services */
 
 .img-service {
@@ -173,6 +181,11 @@ textarea {
   /* margin: 2.625rem 22rem 2rem; */
 }
 
+.footer p {
+  font-size: 14px;
+  color: #fff;
+}
+
 /* Page service */
 
 main {
@@ -256,5 +269,14 @@ main {
 @media only screen and (max-width: 850px) {
   #services > ul {
     display: block;
+  }
+  main {
+    margin: 70px 20px;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .about-image {
+    margin-top: 15.5rem;
   }
 }
