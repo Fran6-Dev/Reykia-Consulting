@@ -71,6 +71,12 @@ a {
   max-width: 100%;
 }
 
+/* Section principale */
+
+.info-tip-medium {
+  max-width: 80rem;
+}
+
 /* Services */
 
 .img-service {
